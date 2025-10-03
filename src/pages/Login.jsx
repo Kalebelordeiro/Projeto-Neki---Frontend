@@ -46,7 +46,7 @@ export default function Login() {
           />
         </div>
 
-        {/* Campo de Senha com Visualizar - ALINHAMENTO CORRIGIDO */}
+        {/* Campo de Senha com Visualizar */}
         <div style={{ position: 'relative', marginBottom: '20px' }}>
           <label htmlFor="password" style={{ display: 'block', marginBottom: '5px' }}>Senha</label>
           <input
@@ -57,14 +57,14 @@ export default function Login() {
             required
           />
           
-          {/* Botão para alternar a visibilidade - POSICIONAMENTO FINAL */}
+          {/* Botão para alternar a visibilidade */}
           <button
             type="button" 
             onClick={() => setShowPassword(!showPassword)} 
             style={{
                 position: 'absolute',
                 right: '10px',
-                top: '66%', /* 55% para ajustar o novo padding do input */
+                top: '66%', 
                 transform: 'translateY(-50%)',
                 padding: '5px',
                 cursor: 'pointer',
@@ -78,7 +78,7 @@ export default function Login() {
           </button>
         </div>
         
-        {/* Checkbox "Lembre-me" */}
+        {/* Checkbox "Lembrar senha" */}
         <div style={{ margin: '15px 0' }}>
           <input
             id="remember"
@@ -94,7 +94,7 @@ export default function Login() {
           type="submit" 
           style={{ 
             backgroundColor: 'var(--primary-cyan)', 
-            color: 'var(--bg-dark)', /* Texto escuro no botão ciano */
+            color: 'var(--bg-dark)', 
             width: '100%',
             marginTop: '25px',
           }}

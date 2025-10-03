@@ -15,7 +15,6 @@ export function AuthProvider({ children }) {
 
   // Efeito que checa o Local Storage ao carregar a aplicação
   useEffect(() => {
-    // Busca a sessão de login
     const stored = localStorage.getItem("skills_user") || sessionStorage.getItem("skills_user");
     if (stored) setUser(JSON.parse(stored));
     
@@ -34,20 +33,17 @@ export function AuthProvider({ children }) {
       return true;
   }
 
-  // Função de LOGIN (AGORA USA O validUser)
+  // Função de login
   function login(username, password, remember) {
       
-      // 1. VERIFICAÇÃO com base no usuário válido atual
       if (username !== validUser.username || password !== validUser.password) {
           console.error("Login falhou: Credenciais inválidas.");
           return false;
       }
       
-      // 2. SUCESSO NO LOGIN
       const userObj = { username, role: 'user' }; 
       setUser(userObj);
       
-      // Armazena a sessão (quem está logado)
       if (remember) localStorage.setItem("skills_user", JSON.stringify(userObj));
       else sessionStorage.setItem("skills_user", JSON.stringify(userObj));
       

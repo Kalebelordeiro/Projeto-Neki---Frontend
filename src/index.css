@@ -1,12 +1,11 @@
-/* src/index.css - TEMA CIANO VIBRANTE */
+
 :root {
-  /* Cores Principais (Mais escuras e vibrantes) */
-  --bg-dark: #121212; /* Fundo principal (Preto Absoluto) */
+  --bg-dark: #121212; /* Fundo principal */
   --bg-card: #1f1f1f; /* Fundo dos cards/elementos */
-  --text-light: #e0e0e0; /* Texto claro */
-  --primary-cyan: #00FFFF; /* 💥 AZUL ELÉTRICO/CIANO VIBRANTE */
-  --accent-orange: #FFD700; /* Dourado/Amarelo para edição */
-  --danger-red: #FF4500; /* Vermelho-laranja para exclusão/sair */
+  --text-light: #e0e0e0; /* Texto */
+  --primary-cyan: #00FFFF; /* Detalhes e sombras */
+  --accent-orange: #FFD700; /* Botões*/
+  --danger-red: #FF4500; /* Botões */
 }
 
 * {
@@ -14,7 +13,7 @@
   margin: 0;
   padding: 0;
   font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  /* Transição suave em tudo */
+  /* Transição suave  */
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
@@ -35,19 +34,19 @@ h1, h2, h3 {
   background-color: var(--bg-card);
   padding: 40px;
   border-radius: 16px;
-  box-shadow: 0 0 20px rgba(0, 255, 255, 0.2); /* Sombra de Ciano */
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.2); /* Sombra */
   margin-top: 80px;
   border: 1px solid rgba(0, 255, 255, 0.1);
   animation: fadeIn 0.8s ease-out; /* Animação de entrada */
 }
 
-/* Animação para entrada do formulário */
+/* Animação entrada do formulário */
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(-20px); }
   to { opacity: 1; transform: translateY(0); }
 }
 
-/* Campos de Input e Select (Com Borda Vibrante) */
+/* Campos de Input e Select */
 input[type="text"], 
 input[type="email"], 
 input[type="password"], 
@@ -77,8 +76,8 @@ button {
 }
 
 button:hover {
-  filter: brightness(1.15); /* Mais vibrante ao passar o mouse */
-  transform: translateY(-2px); /* Efeito 3D sutil */
+  filter: brightness(1.15); /* Efeito ao passar o mouse */
+  transform: translateY(-2px); /* Efeito 3D */
 }
 
 /* Links */

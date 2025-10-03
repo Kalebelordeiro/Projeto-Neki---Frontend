@@ -1,7 +1,7 @@
-// src/components/ProtectedRoute.jsx
+
 import { useContext } from "react";
 import { Navigate } from "react-router-dom";
-import { AuthContext } from "../context/AuthContext.jsx"; // 👈 Importação nomeada
+import { AuthContext } from "../context/AuthContext.jsx"; // Importação nomeada
 
 /* Este componente verifica se o usuário está logado. 
   Se estiver, mostra o conteúdo (children). 
@@ -15,6 +15,6 @@ export default function ProtectedRoute({ children }) {
     return <Navigate to="/" replace />;
   }
   
-  // Se houver usuário, exibe o componente filho (neste caso, a Home)
+  // Se houver usuário, exibe o Home
   return children;
 }

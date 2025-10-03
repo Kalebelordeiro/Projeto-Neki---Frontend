@@ -1,5 +1,3 @@
-// src/pages/Home.jsx (VERSÃO DE DESIGN CIANO APRIMORADA)
-
 import { useState, useContext } from 'react';
 import { AuthContext } from '../context/AuthContext.jsx'; 
 
@@ -61,9 +59,7 @@ export default function Home() {
     }
   };
 
-
-  // --- JSX COM DESIGN VIBRANTE ---
-
+// Parte de desing
   return (
     <div style={{ padding: '40px', maxWidth: '1200px', margin: '0 auto' }}>
       
@@ -213,7 +209,7 @@ export default function Home() {
                   >
                     EDITAR
                   </button>
-                  {/* 💥 CORREÇÃO DEFINITIVA AQUI: O texto é "EXCLUIR" */}
+                  
                   <button 
                     onClick={() => handleDeleteSkill(skill.id)}
                     style={{ 

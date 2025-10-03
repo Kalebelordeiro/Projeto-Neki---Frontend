@@ -36,7 +36,7 @@ export default function Register() {
 
       <form onSubmit={handleSubmit}>
         
-        {/* Campos com espaçamento melhorado */}
+        
         <div style={{ marginBottom: '15px' }}>
           <label htmlFor="name" style={{ display: 'block', marginBottom: '5px' }}>Nome Completo</label>
           <input

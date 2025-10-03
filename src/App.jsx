@@ -13,7 +13,7 @@ function RootLayout() {
   const { user } = useContext(AuthContext); 
   const location = useLocation();
 
-  //URL de imagem escura 
+  //URL de imagem  
   const backgroundImageUrl = 'https://images.unsplash.com/photo-1518770660439-4636190be605?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D';
 
   const showBackground = !user && (location.pathname === '/' || location.pathname === '/register');
